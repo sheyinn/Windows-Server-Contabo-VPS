@@ -29,7 +29,7 @@ This guide provides step-by-step instructions for installing Windows Server on a
 - Log in with the command `ssh root@<MACHINE-IP>` and enter your Rescue System password.
 - Execute the following commands:
   - `apt install git -y`
-  - `git clone https://github.com/ombadr/Windows10-Contabo-VPS.git`
+  - `git clone https://github.com/sheyinn/Windows-Server-Contabo-VPS.git`
   - `cd contabo-windows-install`
   - `chmod +x windows-install.sh`
   - `./windows-install.sh`
