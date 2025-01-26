@@ -63,15 +63,15 @@ EOF
 cd /root/windisk
 mkdir winfile
 
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1mFQ0KZAz2h_DFUlgYNWmfkcOD_mLjB4F' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1mFQ0KZAz2h_DFUlgYNWmfkcOD_mLjB4F" -O win10.iso && rm -rf /tmp/cookies.txt
+wget -O winserv.iso --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" http://bit.ly/3Ec8LDV
 
-mount -o loop win10.iso winfile
+mount -o loop winserv.iso winfile
 
 rsync -avz --progress winfile/* /mnt
 
 umount winfile
 
-wget -O virtio.iso https://shorturl.at/lsOU3
+wget -O virtio.iso https://bit.ly/40ONgCb
 
 mount -o loop virtio.iso winfile
 
