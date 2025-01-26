@@ -1,8 +1,8 @@
-# Windows 10 on a Contabo VPS - Installation Guide
+# Windows Server on a Contabo VPS - Installation Guide
 
 ## Introduction
 
-This guide provides step-by-step instructions for installing Windows 10 on a Contabo VPS. Please be aware that you assume full responsibility for all risks associated with this installation.
+This guide provides step-by-step instructions for installing Windows Server on a Contabo VPS. Please be aware that you assume full responsibility for all risks associated with this installation.
 
 ## Prerequisites
 
